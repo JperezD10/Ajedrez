@@ -8,13 +8,13 @@ namespace Ajedrez
 {
     public class Knight : Piece
     {
-        public Knight(Color color) : base(color)
+        public Knight(Color color, int x, int y) : base(color, x, y)
         {
         }
 
         public override string IconCode => Color == Color.Black ? "\u2658" : "\u265E";
 
-        public override void Move()
+        public override void NextMoves()
         {
             throw new NotImplementedException();
         }
